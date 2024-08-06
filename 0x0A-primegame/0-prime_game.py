@@ -5,7 +5,7 @@
 def isWinner(x, nums):
     """determine who the winner of each game is"""
     ans = 0
-    for num in range(x):
+    for num in range(min(x, len(nums))):
         count = 0
         arr = [True] * nums[num]
         for i in range(1, nums[num]):
